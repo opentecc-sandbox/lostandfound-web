@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-lavender: #A855F7;
+  --color-charcoal: #1A1A1A;
+}
+
+body {
+  background-color: #151317c4;
+  margin: 0;
+  padding: 0; 
+  overflow-x: hidden;
+}
