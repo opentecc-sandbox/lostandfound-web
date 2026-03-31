@@ -15,6 +15,8 @@ const ItemCard = ({ item }) => {
         />
         <div className="absolute inset-0 bg-linear-to-t from-[#111] via-transparent to-transparent"></div>
       </div>
+      <div>Category:{item.category}</div>
+        <div>{item.description}</div>
 
       <div className="p-12  text-white">
         <h4 className="text-3xl font-normal uppercase tracking-tighter mb-4">{item.type} {item.title}</h4>
@@ -22,6 +24,7 @@ const ItemCard = ({ item }) => {
           <div>📍 {item.location}</div>
           <div>📅{new Date(item.createdAt).toLocaleDateString()}</div>
         </div>
+        <div>👤Contact Information:{item.contactInfo }</div>
       </div>
     </motion.div>
   );
