@@ -14,7 +14,7 @@ const ReportFoundItem = () => {
     location: '',
     type: 'FOUND', 
     date: '',
-    contact: '',
+    contactInfo: '',
     photoUrl: '',
     userId: localStorage.getItem('userId') || ''
   });

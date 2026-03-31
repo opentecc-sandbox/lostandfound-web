@@ -14,7 +14,7 @@ const ReportLost = () => {
     location: '',
     type: 'LOST', 
     date: '',
-    contact: '',
+    contactInfo: '',
     photoUrl: '' ,
     userId: localStorage.getItem('userId') || ''
   });
@@ -127,7 +127,7 @@ const ReportLost = () => {
             <div className="grid md:grid-cols-2 gap-10">
               <div className="flex flex-col gap-4">
                 <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Contact Info</label>
-                <input name="contact" placeholder="Email or WhatsApp" onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" required />
+                <input name="contactInfo" placeholder="Email or WhatsApp" onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" required />
               </div>
               <div className="flex flex-col gap-4">
                 <label className="text-[1px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Image Link</label>
