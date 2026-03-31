@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api/api';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar'; 
@@ -39,7 +39,7 @@ const ReportFoundItem = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/items', dataToSubmit);
+      await api.post('/items', dataToSubmit);
       alert('Found item reported! Thank you for helping.');
       navigate('/');
     } catch (error) {
