@@ -73,7 +73,7 @@ const ReportLost = () => {
           <form onSubmit={handleSubmit} className="space-y-10">
             <div className="grid md:grid-cols-2 gap-10">
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Item Name</label>
+                <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Item Name</label>
                 <input 
                   name="title" 
                   placeholder="e.g., iPhone 15 Pro" 
@@ -84,7 +84,7 @@ const ReportLost = () => {
               </div>
 
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Category</label>
+                <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Category</label>
                 <select 
                   name="category" 
                   onChange={handleChange} 
@@ -105,17 +105,17 @@ const ReportLost = () => {
 
             <div className="grid md:grid-cols-2 gap-10">
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Last Seen Location</label>
+                <label className="text-[16px] uppercase tracking-[0.2em] font-black text-slate-500 ml-4">Last Seen Location</label>
                 <input name="location" placeholder="Library, Cafe, Park..." onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" />
               </div>
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Date Lost</label>
+                <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Date Lost</label>
                 <input type="date" name="date" onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all scheme-dark" required />
               </div>
             </div>
 
             <div className="flex flex-col gap-4">
-              <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Description</label>
+              <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Description</label>
               <textarea 
                 name="description" 
                 placeholder="Distinctive marks, stickers, case color..." 
@@ -130,17 +130,17 @@ const ReportLost = () => {
                 <input name="contactInfo" placeholder="Email or WhatsApp" onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" required />
               </div>
               <div className="flex flex-col gap-4">
-                <label className="text-[1px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Image Link</label>
-                <input name="photoUrl" placeholder="Direct image link..." onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" />
+                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Image Link</label>
+                <input name="photoUrl" placeholder="https://..." onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" />
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row gap-6 pt-10">
               <motion.button 
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.02, backgroundColor: "#fff", color: "#000" }}
                 whileTap={{ scale: 0.98 }}
                 type="submit" 
-                className="flex-2 bg-white text-black py-7 rounded-2xl font-[1000] uppercase tracking-[0.2em] text-sm hover:shadow-[0_0_30px_rgba(161,128,255,0.4)] transition-all"
+                className="flex-2 bg-[#A180FF] text-white py-7 rounded-2xl font-[2000] uppercase tracking-[0.2em] text-sm hover:shadow-[0_0_40px_rgba(161,128,255,0.4)] transition-all"
               >
                 Submit Report
               </motion.button>

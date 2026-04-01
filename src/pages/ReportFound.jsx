@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import api from '../api/api';
+import api from "../api/api";
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar'; 
@@ -52,7 +52,7 @@ const ReportFoundItem = () => {
     <div className="min-h-screen bg-[#050505] text-white overflow-x-hidden">
       <Navbar />
 
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-125 bg-[#7848d6]/26 blur-[150px] pointer-events-none z-0" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-125 bg-[#5d3f98] blur-[150px] pointer-events-none z-0" />
       <div className="relative z-10 flex justify-center items-center pt-48 pb-32 px-4">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
@@ -62,9 +62,9 @@ const ReportFoundItem = () => {
         >
           <div className="mb-16 text-center">
             <h2 className="text-6xl font-[1000] uppercase tracking-tighter mb-4 italic">
-              Report <span className="text-[#5b4487]">Found</span> Item
+              Report <span className="text-[#8c839e]">Found</span> Item
             </h2>
-            <p className="text-slate-500 uppercase tracking-[0.4em] text-[16px] font-black opacity-60">
+            <p className="text-slate-500  tracking-[0.2em] text-[19px] font-black opacity-60">
               Provide details to reunite the owner with their item
             </p>
           </div>
@@ -81,7 +81,7 @@ const ReportFoundItem = () => {
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Category</label>
+                <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Category</label>
                 <select 
                   name="category" 
                   onChange={handleChange} 
@@ -101,16 +101,16 @@ const ReportFoundItem = () => {
 
             <div className="grid md:grid-cols-2 gap-10">
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Location Found</label>
+                <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Location Found</label>
                 <input name="location" placeholder="Found at..." onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all placeholder:text-white/5" />
               </div>
               <div className="flex flex-col gap-4">
-                <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Date Found</label>
+                <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Date Found</label>
                 <input type="date" name="date" onChange={handleChange} className="bg-[#151515] border border-white/5 rounded-2xl p-6 focus:border-[#A180FF]/50 focus:outline-none transition-all scheme-dark" required />
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <label className="text-[16px] uppercase tracking-[0.4em] font-black text-slate-500 ml-4">Unique Marks</label>
+              <label className="text-[16px] uppercase tracking-[0.3em] font-black text-slate-500 ml-4">Description</label>
               <textarea 
                 name="description" 
                 placeholder="Scratches, engravings, or specific details..." 
@@ -133,7 +133,7 @@ const ReportFoundItem = () => {
                 whileHover={{ scale: 1.02, backgroundColor: "#fff", color: "#000" }}
                 whileTap={{ scale: 0.98 }}
                 type="submit" 
-                className="flex-2 bg-[#A180FF] text-white py-7 rounded-2xl font-[2000] uppercase tracking-[0.2em] text-sm hover:shadow-[0_0_40px_rgba(161,128,255,0.4)] transition-all"
+                className="flex-2 bg-[#5c4893] text-white py-7 rounded-2xl font-[2000] uppercase tracking-[0.2em] text-sm hover:shadow-[0_0_40px_rgba(161,128,255,0.4)] transition-all"
               >
                 Submit Found Report
               </motion.button>
