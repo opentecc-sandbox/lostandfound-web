@@ -1,4 +1,4 @@
-name: Deploy Frontend to Netlify
+name: Deploy Frontend New to Netlify
 on:
   push:
     branches:
