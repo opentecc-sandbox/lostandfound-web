@@ -2,7 +2,10 @@ name: Deploy Frontend New to Netlify
 on:
   push:
     branches:
-      - feature/github-actions git add .
+      - feature/github-actions
+  pull_request:
+    branches:
+      - feature/github-actions
 
 jobs:
   build-and-deploy:
@@ -18,7 +21,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3.0 
+        uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: './dist'
           production-deploy: true
