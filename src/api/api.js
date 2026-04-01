@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: "https://lostandfound-api-tc60.onrender.com/api",
+    baseURL: import.meta.env.VITE_API_URL || "https://lostandfound-api-tc60.onrender.com/api",
     withCredentials: true
 })
 
