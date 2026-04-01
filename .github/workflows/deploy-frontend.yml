@@ -2,10 +2,9 @@ name: Deploy Frontend New to Netlify
 on:
   push:
     branches:
-      - final-review-actions
+      - main
   pull_request:
-    branches:
-      - final-review-actions
+    types: [opened, synchronize, reopened, closed]
 
 jobs:
   build-and-deploy:
