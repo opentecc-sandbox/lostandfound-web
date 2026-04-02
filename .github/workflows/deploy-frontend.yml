@@ -4,10 +4,13 @@ on:
     branches:
       - main
 
+
 permissions:
   contents: read
   issues: write
   pull-requests: write
+  statuses: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
